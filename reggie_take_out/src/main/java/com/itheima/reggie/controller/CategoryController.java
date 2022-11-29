@@ -24,7 +24,6 @@ public class CategoryController {
     public R<String> save(@RequestBody Category category) {
         log.info("category:{}", category);
         categoryService.save(category);
-
         return R.success("新增分类成功");
     }
 
