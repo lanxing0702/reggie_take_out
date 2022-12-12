@@ -1,6 +1,9 @@
 server:
   port: 8080
 spring:
+  cache:
+    redis:
+      time-to-live: 1800000 #30分钟
   redis:
     host: localhost
     port: 6379
